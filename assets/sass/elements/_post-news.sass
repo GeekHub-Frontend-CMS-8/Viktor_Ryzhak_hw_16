@@ -1,0 +1,37 @@
+.post-news
+  width: 100%
+  padding-top: 8%
+  display: flex
+  &__icon
+    width: 25%
+    &-post-1
+      @include icon-bg ($width: 67px, $height: 67px, $background: url("../../img/elements/post-news-1.png"))
+    &-post-2
+      @include icon-bg ($width: 67px, $height: 67px, $background: url("../../img/elements/post-news-2.png"))
+    &-post-3
+      @include icon-bg ($width: 67px, $height: 67px, $background: url("../../img/elements/post-news-3.png"))
+  &__content
+    width: 75%
+  &__title
+    @include text-style ($color: #362f2f, $font-family: $font-family__second, $font-size: $font-size__extra-small, $font-weight: $font-weight__bold)
+    text-transform: uppercase
+    letter-spacing: 1.2px
+  &__subtitle
+    @include text-style ($color: #7a7a7a, $font-family: $font-family__second, $font-size: $font-size__tiny, $font-weight: $font-weight__regular)
+    text-transform: uppercase
+    letter-spacing: 1.1px
+  &__text
+    padding-top: 2%
+    @include text-style ($color: #362f2f, $font-family: $font-family__second, $font-size: $font-size__extra-small, $font-weight: $font-weight__regular)
+    letter-spacing: 1.2px
+  &__link
+    background: transparent
+    @include text-style ($color: #c3a000, $font-family: $font-family__second, $font-size: $font-size__extra-tiny, $font-weight: $font-weight__bold)
+    text-transform: uppercase
+
+
+
+
+
+
+
