@@ -1,0 +1,22 @@
+@mixin button ($background, $padding, $border)
+  background: $background
+  padding: $padding
+  border: $border
+
+@mixin text-style ($color, $font-family, $font-size, $font-weight)
+  color: $color
+  font-family: $font-family
+  font-size: $font-size
+  font-weight: $font-weight
+
+@mixin icon-bg ($width, $height, $background)
+  width: $width
+  height: $height
+  background: $background center / cover no-repeat
+
+@mixin icon-circle ($width, $height, $background-color, $border, $border-radius )
+  width: $width
+  height: $height
+  background-color: $background-color
+  border: $border
+  border-radius: $border-radius

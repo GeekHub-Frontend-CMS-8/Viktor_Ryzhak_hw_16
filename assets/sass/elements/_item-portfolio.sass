@@ -1,0 +1,58 @@
+.item-portfolio
+  width: 100%
+  padding: 5% 0 5% 5%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &__icon
+    display: flex
+    justify-content: flex-end
+    padding-right: 5%
+  &__item
+    padding-top: 20%
+    display: flex
+  &__content
+    width: 70%
+    display: flex
+    flex-direction: column
+    &-title
+      @include text-style ($color: #362f2f, $font-family: $font-family__second, $font-size: $font-size__large, $font-weight: $font-weight__regular)
+      text-transform: uppercase
+    &-subtitle
+      padding-top: 2%
+      @include text-style ($color: #362f2f, $font-family: $font-family__second, $font-size: $font-size__normal, $font-weight: $font-weight__regular)
+      font-style: italic
+    &-text
+      padding-top: 10%
+      @include text-style ($color: #362f2f, $font-family: $font-family__second, $font-size: $font-size__normal, $font-weight: $font-weight__light)
+      line-height: 14px
+  &__carousel
+    width: 30%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    &-icon
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: row
+      width: 50px
+      height: 30px
+      background-color: #362f2f
+
+  &__menu
+    display: flex
+    padding-top: 15%
+    justify-content: space-around
+    &-icon
+      @include text-style ($color: #c29f00, $font-family: $font-family__second, $font-size: $font-size__normal, $font-weight: $font-weight__regular)
+
+
+
+
+
+
+
+
+

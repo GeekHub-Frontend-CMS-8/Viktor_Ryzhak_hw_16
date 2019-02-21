@@ -1,0 +1,54 @@
+.button
+  &__title
+    display: block
+    @include button ($background: transparent, $padding: 16px 26px, $border: 2px solid #f2f2f2)
+    @include text-style ($color: $color__first-text, $font-family: $font-family__second, $font-size: $font-size__small, $font-weight: $font-weight__regular)
+    letter-spacing: 1.4px
+    &:hover
+      background-color: #f2f2f2
+      color: $color__second-text
+  &__normal
+    display: block
+    @include button ($background: transparent, $padding: 14px 25px, $border: 2px solid $color__second-text)
+    @include text-style ($color: $color__second-text, $font-family: $font-family__second, $font-size: $font-size__tiny, $font-weight: $font-weight__regular)
+    letter-spacing: 1.4px
+    &:hover
+      background-color: $color__second-text
+      color: $color__first-text
+  &__small
+    display: block
+    @include button ($background: transparent, $padding: 10px 25px, $border: 2px solid $color__second-text)
+    @include text-style ($color: $color__second-text, $font-family: $font-family__second, $font-size: $font-size__extra-tiny, $font-weight: $font-weight__semi-bold)
+    letter-spacing: 1.4px
+    &:hover
+      background-color: $color__second-text
+      color: $color__first-text
+  &__on-dark
+    display: block
+    @include button ($background: transparent, $padding: 14px 25px, $border: 2px solid $color__fifth-text)
+    @include text-style ($color: $color__fifth-text, $font-family: $font-family__second, $font-size: $font-size__tiny, $font-weight: $font-weight__regular)
+    letter-spacing: 1.4px
+    &:hover
+      background-color: $color__second-text
+      color: $color__first-text
+  &__icon
+    &-brando-ebsen
+      display: block
+      @include icon-bg ($width: 133px, $height: 102px, $background: url("../../img/elements/icon_brando-ebsen.png"))
+    &-workwear
+      display: block
+      @include icon-bg ($width: 137px, $height: 90px, $background: url("../../img/elements/icon_workwear.png"))
+    &-hamburger
+      display: block
+      @include icon-bg ($width: 136px, $height: 109px, $background: url("../../img/elements/icon_hamburger.png"))
+    &-motorcycles-shop
+      display: block
+      @include icon-bg ($width: 116px, $height: 116px, $background: url("../../img/elements/icon_motorcycles-shop.png"))
+    &-cassandra
+      display: block
+      @include icon-bg ($width: 129px, $height: 110px, $background: url("../../img/elements/icon_cassandra.png"))
+
+
+
+
+

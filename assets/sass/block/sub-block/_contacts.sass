@@ -1,0 +1,64 @@
+.contacts
+  display: flex
+  align-items: center
+  &__content
+    display: flex
+    flex-direction: column
+    &-one
+      width: 100%
+      display: flex
+    &-social
+      padding-left: 5%
+      width: 100%
+      display: flex
+      flex-direction: column
+      &-type
+        padding-top: 5%
+        width: 70%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-all
+          padding-top: 10%
+          width: 70%
+          display: flex
+          align-items: center
+          justify-content: space-around
+    &-two
+      padding-top: 15%
+      display: flex
+      align-items: center
+      flex-direction: column
+      &-title
+        padding-top: 5%
+        @include text-style ($color: #c3a000, $font-family: $font-family__second, $font-size: $font-size__large, $font-weight: $font-weight__regular)
+        font-style: italic
+      &-text
+        @include text-style ($color: #000, $font-family: $font-family__second, $font-size: $font-size__large, $font-weight: $font-weight__regular)
+        font-style: italic
+
+  &__icon
+    display: flex
+
+  &__title
+    padding-left: 10px
+    @include text-style ($color: #362f2f, $font-family: $font-family__second, $font-size: $font-size__normal, $font-weight: $font-weight__bold)
+    letter-spacing: 1.6px
+    text-transform: uppercase
+    position: relative
+    &::after
+      display: block
+      position: absolute
+      content: " "
+      height: 5px
+      left: 0
+      width: 40%
+      border-bottom: 1px solid #c3a000
+
+
+
+
+
+
+
+
